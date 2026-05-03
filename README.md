@@ -27,64 +27,21 @@
 ## ✨ Key Features
 
 * **🦋 Mariposas Dinámicas**: Presentando la variante **Morpho Azul** con un sistema de IA que permite la polinización física sobre flores.
-<<<<<<< HEAD
-* **🍯 Mecánica de Néctar**: Recolecta polen para fabricar **Butterfly Nectar**, un consumible funcional que otorga efectos de Regeneración, Salto y Caída Lenta con sonidos personalizados de miel.
-* **🐻 Fauna Detallada**: Incluye al **Oso Pardo**, diseñado con un sistema de articulaciones múltiples en sus patas para un movimiento fluido y pesado.
+* **🍯 Mecánica de Néctar**: Recolecta polen para fabricar **Butterfly Nectar**, un consumible funcional que otorga efectos de Regeneración, Salto y Caída Lenta con sonidos personalizados de miel[cite: 1].
+* **🐻 Fauna Detallada**: Incluye al **Oso Pardo**, diseñado con un sistema de articulaciones múltiples en sus patas para un movimiento fluido y pesado[cite: 1].
 * **🎬 Animaciones GeckoLib**: Implementación de ciclos de descanso (Idle) y caminata (Walk) mediante archivos `.animation.json` personalizados[cite: 1].
 
 ## 🛠️ Requirements & Installation
 
 * **Minecraft Version**: 1.20.1[cite: 1]
 * **Mod Loader**: Forge[cite: 1]
-=======
-* **🍯 Mecánica de Néctar**: Recolecta polen para fabricar **Butterfly Nectar**, un consumible funcional que otorga efectos de Regeneración, Salto y Caída Lenta con sonidos personalizados de miel[cite: 1].
-* **🐻 Fauna Detallada**: Incluye al **Oso Pardo**, diseñado con un sistema de articulaciones múltiples en sus patas para un movimiento fluido y pesado[cite: 1].
-* **🎬 Animaciones GeckoLib**: Implementación de ciclos de descanso (Idle) y caminata (Walk) mediante archivos `.animation.json` personalizados[cite: 1].
-* **🥚 Identidad Visual**: Huevos de spawn personalizados (Azul Morpho y Negro) para una navegación intuitiva en el menú creativo[cite: 1].
-
-## 🛠️ Requirements & Installation
-
-* **Minecraft Version**: 1.20.1
-* **Mod Loader**: Forge
->>>>>>> d50826e3f4fd32601dfdf0ea1d72df3785c5a36e
 * **Dependencies**: [GeckoLib](https://www.curseforge.com/minecraft/mc-mods/geckolib)[cite: 1]
-
-1. Descarga el archivo `.jar`.
-2. Asegúrate de tener instalado **Forge 1.20.1**.
-3. Arrastra el archivo a tu carpeta de `mods`.
-
-## 🚀 Roadmap
-
-- [ ] Implementación de variantes de color para las mariposas.
-- [ ] IA agresiva y de caza para el Oso Pardo.
-<<<<<<< HEAD
-- [ ] Nuevas criaturas terrestres.
 
 ## ⚖️ License
 Este proyecto está bajo la licencia MIT.
-=======
-- [ ] Nuevas criaturas terrestres (bosques templados).
-- [ ] Integración de logros (Advancements) por descubrimiento de especies.
-
-## 💬 Community
-
-¡Únete a nuestra comunidad para seguir el desarrollo de cerca!
-- 🧪 Prueba versiones beta antes que nadie.
-- 🐞 Reporta errores o sugiere nuevas criaturas.
-- 💡 Influye en el futuro de la fauna de Minecraft.
-
-[**Join our Discord Server**](https://discord.gg/k4cbPkFUnc)
-
-## ⚖️ License
-Este proyecto está bajo la licencia MIT. Siéntete libre de explorar el código y contribuir.
->>>>>>> d50826e3f4fd32601dfdf0ea1d72df3785c5a36e
 
 ---
 
 <p align="center">
   <em>"Untamed: Reclaiming the wild, one species at a time."</em>
-<<<<<<< HEAD
 </p>
-=======
-</p>
->>>>>>> d50826e3f4fd32601dfdf0ea1d72df3785c5a36e
