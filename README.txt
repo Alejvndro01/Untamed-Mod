@@ -1,35 +1,68 @@
-# 🐾 Untamed: Nature Unbound
+<p align="center">
+  <img src="https://raw.githubusercontent.com/Alejvndro01/Untamed/main/src/main/resources/assets/untamed/textures/item/logo_tab.png" alt="Untamed Logo" width="600">
+  <br>
+  <a href="https://modrinth.com/project/untamed-nature-unbound" target="_blank">
+    <img src="https://img.shields.io/badge/Download-Modrinth-1bd96a?style=for-the-badge&logo=modrinth&logoColor=white" alt="Download on Modrinth">
+  </a>
+</p>
 
-![Untamed Logo](src/main/resources/assets/untamed/textures/item/logo_tab.png)
-
-**Untamed: Nature Unbound** es un mod de Minecraft desarrollado en **Forge** que busca expandir la biodiversidad del juego con fauna realista, mecánicas de interacción detalladas y una estética única basada en modelos de bajo poligonaje (low-poly).
-
-## ✨ Características Principales
-
-### 🦋 Mariposas y Polinización
-*   **Variante Morpho Azul:** Una hermosa mariposa con un ciclo de vida funcional.
-*   **Mecánica de Polinización:** Las mariposas buscan flores cercanas, se posan físicamente sobre ellas y recolectan polen.
-*   **Recolección de Polen:** Al polinizar, las mariposas sueltan **Polen**, un recurso esencial para el mod[cite: 1].
-*   **Néctar de Mariposa:** Crea néctar artesanal que otorga efectos de **Regeneración II**, **Salto II** y **Caída Lenta**[cite: 1]. ¡Incluye sonidos personalizados de consumo similares a la miel![cite: 1].
-
-### 🐻 Fauna Salvaje
-*   **Oso Pardo:** Un modelo detallado con sistema de articulaciones múltiples en sus patas para un movimiento pesado y realista[cite: 1].
-*   **Animaciones Avanzadas:** Gracias a **GeckoLib**, las criaturas cuentan con ciclos de descanso (Idle) y caminata (Walk) fluidos[cite: 1].
-
-## 🛠️ Tecnologías Utilizadas
-*   **Java & Forge:** El motor principal del mod.
-*   **GeckoLib:** Para el manejo de animaciones complejas y modelos 3D[cite: 1].
-*   **Blockbench:** Utilizado para el modelado y texturizado de las entidades[cite: 1].
-
-## 🚀 Instalación
-1. Asegúrate de tener instalado **Minecraft Forge**.
-2. Descarga el `.jar` de este mod desde la sección de [Releases](https://github.com/tu-usuario/Untamed-Mod/releases) o Modrinth.
-3. Coloca el archivo en tu carpeta `.minecraft/mods`.
-4. ¡Disfruta de la naturaleza!
-
-## 📜 Créditos y Desarrollo
-Desarrollado por **Dilan Alejandro Baltras Arévalo**[cite: 1]. 
-El proyecto utiliza una jerarquía de archivos organizada para facilitar la expansión de nuevas especies en el futuro[cite: 1].
+<p align="center">
+  <a href="https://github.com/Alejvndro01" target="_blank">
+    <img src="https://img.shields.io/badge/Author-Alejvndro01-181717?style=flat&logo=github" alt="GitHub">
+  </a>
+  <a href="https://discord.gg/k4cbPkFUnc" target="_blank">
+    <img src="https://img.shields.io/badge/Discord-Alejvndro Dev-5865F2?style=flat&logo=discord" alt="Discord">
+  </a>
+  <img src="https://img.shields.io/badge/Minecraft-1.20.1-blueviolet" alt="MC Version">
+  <img src="https://img.shields.io/badge/Loader-Forge-orange" alt="Forge">
+  <img src="https://img.shields.io/badge/Status-Development-yellow" alt="Status">
+</p>
 
 ---
-*Este mod es parte de un proyecto educativo de Ingeniería en Informática en la Universidad Santo Tomás.*[cite: 1]
+
+## 📜 About Untamed: Nature Unbound
+
+**Untamed: Nature Unbound** es un mod desarrollado para expandir la biodiversidad de Minecraft con un enfoque en fauna realista y mecánicas de interacción detalladas. Utilizando modelos de bajo poligonaje (low-poly), el mod busca integrar criaturas que se sientan naturales dentro del ecosistema de Vanilla.
+
+## ✨ Key Features
+
+* **🦋 Mariposas Dinámicas**: Presentando la variante **Morpho Azul** con un sistema de IA que permite la polinización física sobre flores.
+* **🍯 Mecánica de Néctar**: Recolecta polen para fabricar **Butterfly Nectar**, un consumible funcional que otorga efectos de Regeneración, Salto y Caída Lenta con sonidos personalizados de miel[cite: 1].
+* **🐻 Fauna Detallada**: Incluye al **Oso Pardo**, diseñado con un sistema de articulaciones múltiples en sus patas para un movimiento fluido y pesado[cite: 1].
+* **🎬 Animaciones GeckoLib**: Implementación de ciclos de descanso (Idle) y caminata (Walk) mediante archivos `.animation.json` personalizados[cite: 1].
+* **🥚 Identidad Visual**: Huevos de spawn personalizados (Azul Morpho y Negro) para una navegación intuitiva en el menú creativo[cite: 1].
+
+## 🛠️ Requirements & Installation
+
+* **Minecraft Version**: 1.20.1
+* **Mod Loader**: Forge
+* **Dependencies**: [GeckoLib](https://www.curseforge.com/minecraft/mc-mods/geckolib)[cite: 1]
+
+1. Descarga el archivo `.jar`.
+2. Asegúrate de tener instalado **Forge 1.20.1**.
+3. Arrastra el archivo a tu carpeta de `mods`.
+
+## 🚀 Roadmap
+
+- [ ] Implementación de variantes de color para las mariposas.
+- [ ] IA agresiva y de caza para el Oso Pardo.
+- [ ] Nuevas criaturas terrestres (bosques templados).
+- [ ] Integración de logros (Advancements) por descubrimiento de especies.
+
+## 💬 Community
+
+¡Únete a nuestra comunidad para seguir el desarrollo de cerca!
+- 🧪 Prueba versiones beta antes que nadie.
+- 🐞 Reporta errores o sugiere nuevas criaturas.
+- 💡 Influye en el futuro de la fauna de Minecraft.
+
+[**Join our Discord Server**](https://discord.gg/k4cbPkFUnc)
+
+## ⚖️ License
+Este proyecto está bajo la licencia MIT. Siéntete libre de explorar el código y contribuir.
+
+---
+
+<p align="center">
+  <em>"Untamed: Reclaiming the wild, one species at a time."</em>
+</p>
