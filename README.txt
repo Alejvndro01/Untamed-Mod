@@ -1,46 +1,57 @@
+<p align="center">
+  <img src="https://raw.githubusercontent.com/Alejvndro01/Untamed/main/src/main/resources/assets/untamed/textures/item/logo_tab.png" alt="Untamed Logo" width="600">
+  <br>
+  <a href="https://modrinth.com/project/untamed-nature-unbound" target="_blank">
+    <img src="https://img.shields.io/badge/Download-Modrinth-1bd96a?style=for-the-badge&logo=modrinth&logoColor=white" alt="Download on Modrinth">
+  </a>
+</p>
 
-Source installation information for modders
--------------------------------------------
-This code follows the Minecraft Forge installation methodology. It will apply
-some small patches to the vanilla MCP source code, giving you and it access 
-to some of the data and functions you need to build a successful mod.
+<p align="center">
+  <a href="https://github.com/Alejvndro01" target="_blank">
+    <img src="https://img.shields.io/badge/Author-Alejvndro01-181717?style=flat&logo=github" alt="GitHub">
+  </a>
+  <a href="https://discord.gg/k4cbPkFUnc" target="_blank">
+    <img src="https://img.shields.io/badge/Discord-Alejvndro Dev-5865F2?style=flat&logo=discord" alt="Discord">
+  </a>
+  <img src="https://img.shields.io/badge/Minecraft-1.20.1-blueviolet" alt="MC Version">
+  <img src="https://img.shields.io/badge/Loader-Forge-orange" alt="Forge">
+  <img src="https://img.shields.io/badge/Status-Development-yellow" alt="Status">
+</p>
 
-Note also that the patches are built against "un-renamed" MCP source code (aka
-SRG Names) - this means that you will not be able to read them directly against
-normal code.
+---
 
-Setup Process:
-==============================
+## 📜 About Untamed: Nature Unbound
 
-Step 1: Open your command-line and browse to the folder where you extracted the zip file.
+**Untamed: Nature Unbound** es un mod desarrollado para expandir la biodiversidad de Minecraft con un enfoque en fauna realista y mecánicas de interacción detalladas. Utilizando modelos de bajo poligonaje (low-poly), el mod busca integrar criaturas que se sientan naturales dentro del ecosistema de Vanilla.
 
-Step 2: You're left with a choice.
-If you prefer to use Eclipse:
-1. Run the following command: `./gradlew genEclipseRuns`
-2. Open Eclipse, Import > Existing Gradle Project > Select Folder 
-   or run `gradlew eclipse` to generate the project.
+## ✨ Key Features
 
-If you prefer to use IntelliJ:
-1. Open IDEA, and import project.
-2. Select your build.gradle file and have it import.
-3. Run the following command: `./gradlew genIntellijRuns`
-4. Refresh the Gradle Project in IDEA if required.
+* **🦋 Mariposas Dinámicas**: Presentando la variante **Morpho Azul** con un sistema de IA que permite la polinización física sobre flores.
+* **🍯 Mecánica de Néctar**: Recolecta polen para fabricar **Butterfly Nectar**, un consumible funcional que otorga efectos de Regeneración, Salto y Caída Lenta con sonidos personalizados de miel.
+* **🐻 Fauna Detallada**: Incluye al **Oso Pardo**, diseñado con un sistema de articulaciones múltiples en sus patas para un movimiento fluido y pesado.
+* **🎬 Animaciones GeckoLib**: Implementación de ciclos de descanso (Idle) y caminata (Walk) mediante archivos `.animation.json` personalizados[cite: 1].
 
-If at any point you are missing libraries in your IDE, or you've run into problems you can 
-run `gradlew --refresh-dependencies` to refresh the local cache. `gradlew clean` to reset everything 
-(this does not affect your code) and then start the process again.
+## 🛠️ Requirements & Installation
 
-Mapping Names:
-=============================
-By default, the MDK is configured to use the official mapping names from Mojang for methods and fields 
-in the Minecraft codebase. These names are covered by a specific license. All modders should be aware of this
-license, if you do not agree with it you can change your mapping names to other crowdsourced names in your 
-build.gradle. For the latest license text, refer to the mapping file itself, or the reference copy here:
-https://github.com/MinecraftForge/MCPConfig/blob/master/Mojang.md
+* **Minecraft Version**: 1.20.1[cite: 1]
+* **Mod Loader**: Forge[cite: 1]
+* **Dependencies**: [GeckoLib](https://www.curseforge.com/minecraft/mc-mods/geckolib)[cite: 1]
 
-Additional Resources: 
-=========================
-Community Documentation: https://docs.minecraftforge.net/en/1.20.1/gettingstarted/
-LexManos' Install Video: https://youtu.be/8VEdtQLuLO0
-Forge Forums: https://forums.minecraftforge.net/
-Forge Discord: https://discord.minecraftforge.net/
+1. Descarga el archivo `.jar`.
+2. Asegúrate de tener instalado **Forge 1.20.1**.
+3. Arrastra el archivo a tu carpeta de `mods`.
+
+## 🚀 Roadmap
+
+- [ ] Implementación de variantes de color para las mariposas.
+- [ ] IA agresiva y de caza para el Oso Pardo.
+- [ ] Nuevas criaturas terrestres.
+
+## ⚖️ License
+Este proyecto está bajo la licencia MIT.
+
+---
+
+<p align="center">
+  <em>"Untamed: Reclaiming the wild, one species at a time."</em>
+</p>
