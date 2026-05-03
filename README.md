@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/Alejvndro01/Untamed/main/banner.png" alt="Untamed Logo" width="600">
+  <img src="banner.png" alt="Untamed Logo" width="600">
   <br>
   <a href="https://modrinth.com/project/untamed-nature-unbound" target="_blank">
     <img src="https://img.shields.io/badge/Download-Modrinth-1bd96a?style=for-the-badge&logo=modrinth&logoColor=white" alt="Download on Modrinth">
