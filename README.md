@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/Alejvndro01/Untamed/banner.png" alt="Untamed Logo" width="600">
+  <img src="https://raw.githubusercontent.com/Alejvndro01/Untamed/main/banner.png" alt="Untamed Logo" width="600">
   <br>
   <a href="https://modrinth.com/project/untamed-nature-unbound" target="_blank">
     <img src="https://img.shields.io/badge/Download-Modrinth-1bd96a?style=for-the-badge&logo=modrinth&logoColor=white" alt="Download on Modrinth">
@@ -27,16 +27,16 @@
 ## ✨ Key Features
 
 * **🦋 Mariposas Dinámicas**: Presentando la variante **Morpho Azul** con un sistema de IA que permite la polinización física sobre flores.
-* **🍯 Mecánica de Néctar**: Recolecta polen para fabricar **Butterfly Nectar**, un consumible funcional que otorga efectos de Regeneración, Salto y Caída Lenta con sonidos personalizados de miel[cite: 1].
-* **🐻 Fauna Detallada**: Incluye al **Oso Pardo**, diseñado con un sistema de articulaciones múltiples en sus patas para un movimiento fluido y pesado[cite: 1].
-* **🎬 Animaciones GeckoLib**: Implementación de ciclos de descanso (Idle) y caminata (Walk) mediante archivos `.animation.json` personalizados[cite: 1].
-* **🥚 Identidad Visual**: Huevos de spawn personalizados (Azul Morpho y Negro) para una navegación intuitiva en el menú creativo[cite: 1].
+* **🍯 Mecánica de Néctar**: Recolecta polen para fabricar **Butterfly Nectar**, un consumible funcional que otorga efectos de Regeneración, Salto y Caída Lenta con sonidos personalizados de miel.
+* **🐻 Fauna Detallada**: Incluye al **Oso Pardo**, diseñado con un sistema de articulaciones múltiples en sus patas para un movimiento fluido y pesado.
+* **🎬 Animaciones GeckoLib**: Implementación de ciclos de descanso (Idle) y caminata (Walk) mediante archivos `.animation.json` personalizados.
+* **🥚 Identidad Visual**: Huevos de spawn personalizados (Azul Morpho y Negro) para una navegación intuitiva en el menú creativo.
 
 ## 🛠️ Requirements & Installation
 
 * **Minecraft Version**: 1.20.1
 * **Mod Loader**: Forge
-* **Dependencies**: [GeckoLib](https://www.curseforge.com/minecraft/mc-mods/geckolib)[cite: 1]
+* **Dependencies**: [GeckoLib](https://www.curseforge.com/minecraft/mc-mods/geckolib)
 
 1. Descarga el archivo `.jar`.
 2. Asegúrate de tener instalado **Forge 1.20.1**.
