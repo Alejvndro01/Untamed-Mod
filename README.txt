@@ -1,46 +1,35 @@
+# 🐾 Untamed: Nature Unbound
 
-Source installation information for modders
--------------------------------------------
-This code follows the Minecraft Forge installation methodology. It will apply
-some small patches to the vanilla MCP source code, giving you and it access 
-to some of the data and functions you need to build a successful mod.
+![Untamed Logo](src/main/resources/assets/untamed/textures/item/logo_tab.png)
 
-Note also that the patches are built against "un-renamed" MCP source code (aka
-SRG Names) - this means that you will not be able to read them directly against
-normal code.
+**Untamed: Nature Unbound** es un mod de Minecraft desarrollado en **Forge** que busca expandir la biodiversidad del juego con fauna realista, mecánicas de interacción detalladas y una estética única basada en modelos de bajo poligonaje (low-poly).
 
-Setup Process:
-==============================
+## ✨ Características Principales
 
-Step 1: Open your command-line and browse to the folder where you extracted the zip file.
+### 🦋 Mariposas y Polinización
+*   **Variante Morpho Azul:** Una hermosa mariposa con un ciclo de vida funcional.
+*   **Mecánica de Polinización:** Las mariposas buscan flores cercanas, se posan físicamente sobre ellas y recolectan polen.
+*   **Recolección de Polen:** Al polinizar, las mariposas sueltan **Polen**, un recurso esencial para el mod[cite: 1].
+*   **Néctar de Mariposa:** Crea néctar artesanal que otorga efectos de **Regeneración II**, **Salto II** y **Caída Lenta**[cite: 1]. ¡Incluye sonidos personalizados de consumo similares a la miel![cite: 1].
 
-Step 2: You're left with a choice.
-If you prefer to use Eclipse:
-1. Run the following command: `./gradlew genEclipseRuns`
-2. Open Eclipse, Import > Existing Gradle Project > Select Folder 
-   or run `gradlew eclipse` to generate the project.
+### 🐻 Fauna Salvaje
+*   **Oso Pardo:** Un modelo detallado con sistema de articulaciones múltiples en sus patas para un movimiento pesado y realista[cite: 1].
+*   **Animaciones Avanzadas:** Gracias a **GeckoLib**, las criaturas cuentan con ciclos de descanso (Idle) y caminata (Walk) fluidos[cite: 1].
 
-If you prefer to use IntelliJ:
-1. Open IDEA, and import project.
-2. Select your build.gradle file and have it import.
-3. Run the following command: `./gradlew genIntellijRuns`
-4. Refresh the Gradle Project in IDEA if required.
+## 🛠️ Tecnologías Utilizadas
+*   **Java & Forge:** El motor principal del mod.
+*   **GeckoLib:** Para el manejo de animaciones complejas y modelos 3D[cite: 1].
+*   **Blockbench:** Utilizado para el modelado y texturizado de las entidades[cite: 1].
 
-If at any point you are missing libraries in your IDE, or you've run into problems you can 
-run `gradlew --refresh-dependencies` to refresh the local cache. `gradlew clean` to reset everything 
-(this does not affect your code) and then start the process again.
+## 🚀 Instalación
+1. Asegúrate de tener instalado **Minecraft Forge**.
+2. Descarga el `.jar` de este mod desde la sección de [Releases](https://github.com/tu-usuario/Untamed-Mod/releases) o Modrinth.
+3. Coloca el archivo en tu carpeta `.minecraft/mods`.
+4. ¡Disfruta de la naturaleza!
 
-Mapping Names:
-=============================
-By default, the MDK is configured to use the official mapping names from Mojang for methods and fields 
-in the Minecraft codebase. These names are covered by a specific license. All modders should be aware of this
-license, if you do not agree with it you can change your mapping names to other crowdsourced names in your 
-build.gradle. For the latest license text, refer to the mapping file itself, or the reference copy here:
-https://github.com/MinecraftForge/MCPConfig/blob/master/Mojang.md
+## 📜 Créditos y Desarrollo
+Desarrollado por **Dilan Alejandro Baltras Arévalo**[cite: 1]. 
+El proyecto utiliza una jerarquía de archivos organizada para facilitar la expansión de nuevas especies en el futuro[cite: 1].
 
-Additional Resources: 
-=========================
-Community Documentation: https://docs.minecraftforge.net/en/1.20.1/gettingstarted/
-LexManos' Install Video: https://youtu.be/8VEdtQLuLO0
-Forge Forums: https://forums.minecraftforge.net/
-Forge Discord: https://discord.minecraftforge.net/
+---
+*Este mod es parte de un proyecto educativo de Ingeniería en Informática en la Universidad Santo Tomás.*[cite: 1]
