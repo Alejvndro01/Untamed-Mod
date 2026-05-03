@@ -1,0 +1,135 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.unknown",
+				"texture_width": 32,
+				"texture_height": 32,
+				"visible_bounds_width": 2,
+				"visible_bounds_height": 2.5,
+				"visible_bounds_offset": [0, 0.75, 0]
+			},
+			"bones": [
+				{
+					"name": "root",
+					"pivot": [0, 4, 0.5]
+				},
+				{
+					"name": "body_tra",
+					"parent": "root",
+					"pivot": [0, 5, 0.1],
+					"rotation": [-42.5, 0, 0],
+					"cubes": [
+						{"origin": [0, 5, 0.1], "size": [1, 1, 3], "inflate": 0.07, "uv": [0, 12]}
+					]
+				},
+				{
+					"name": "pata_tra_izq",
+					"parent": "body_tra",
+					"pivot": [1, 5, 2.1],
+					"cubes": [
+						{"origin": [0.9, 4, 1.6], "size": [0, 1, 1], "pivot": [0.9, 5, 2.1], "rotation": [0, 0, -7.5], "uv": [14, 14]}
+					]
+				},
+				{
+					"name": "pata_tra_der",
+					"parent": "body_tra",
+					"pivot": [-1, 5, 2.1],
+					"cubes": [
+						{"origin": [0.1, 4, 1.6], "size": [0, 1, 1], "pivot": [0.1, 5, 2.1], "rotation": [0, 0, 7.5], "uv": [14, 12]}
+					]
+				},
+				{
+					"name": "ala_der_tra",
+					"parent": "body_tra",
+					"pivot": [-0.2, 5.14009, 1.53162],
+					"rotation": [-15, 0, 0],
+					"cubes": [
+						{"origin": [-2.5, 5.24009, 0.03162], "size": [3, 0, 3], "uv": [0, 6]}
+					]
+				},
+				{
+					"name": "ala_izq_tra",
+					"parent": "body_tra",
+					"pivot": [0.2, 5.14009, 1.53162],
+					"rotation": [-15, 0, 0],
+					"cubes": [
+						{"origin": [0.5, 5.24009, 0.03162], "size": [3, 0, 3], "uv": [0, 9]}
+					]
+				},
+				{
+					"name": "cabeza",
+					"parent": "root",
+					"pivot": [0, 6, 0],
+					"cubes": [
+						{"origin": [0, 6, -2], "size": [1, 1, 1], "inflate": 0.1, "uv": [13, 7]}
+					]
+				},
+				{
+					"name": "antena_der",
+					"parent": "cabeza",
+					"pivot": [0.1, 7.05, -1.5],
+					"rotation": [-19.90002, 3.89624, -8.04309],
+					"cubes": [
+						{"origin": [-0.09, 6.59393, -2.16479], "size": [0, 2, 1], "pivot": [-0.04148, 6.54158, -1.92576], "rotation": [0, 7.5, 1.5], "uv": [12, 9]}
+					]
+				},
+				{
+					"name": "antena_izq",
+					"parent": "cabeza",
+					"pivot": [1, 6.75, -1.9],
+					"rotation": [-20.23561, -10.94211, 13.63668],
+					"cubes": [
+						{"origin": [1.05719, 6.74559, -2.22642], "size": [0, 2, 1], "uv": [14, 9]}
+					]
+				},
+				{
+					"name": "body_del",
+					"parent": "root",
+					"pivot": [0.5, 5.5, 0.25],
+					"rotation": [-40, 0, 0],
+					"cubes": [
+						{"origin": [0, 5.11698, -1.42861], "size": [1, 1, 2], "uv": [8, 12]}
+					]
+				},
+				{
+					"name": "pata_del_der",
+					"parent": "body_del",
+					"pivot": [0.2, 5.11698, -0.62861],
+					"rotation": [40, 0, 0],
+					"cubes": [
+						{"origin": [0.17389, 3.3081, -1.35842], "size": [0, 2, 1], "pivot": [0.2, 5.10981, -0.65842], "rotation": [0, 0, 7.5], "uv": [14, 0]}
+					]
+				},
+				{
+					"name": "pata_del_izq",
+					"parent": "body_del",
+					"pivot": [1, 5.11698, -0.62861],
+					"rotation": [40, 0, 0],
+					"cubes": [
+						{"origin": [0.82611, 3.3081, -1.35842], "size": [0, 2, 1], "pivot": [0.8, 5.10981, -0.55842], "rotation": [0, 0, -7.5], "uv": [14, 3]}
+					]
+				},
+				{
+					"name": "ala_der",
+					"parent": "body_del",
+					"pivot": [0.5, 5.6547, -0.32396],
+					"rotation": [-12.44548, 1.29256, 4.83045],
+					"cubes": [
+						{"origin": [-3.49734, 5.69373, -1.82662], "size": [4, 0, 3], "uv": [0, 0]}
+					]
+				},
+				{
+					"name": "ala_izq",
+					"parent": "body_del",
+					"pivot": [0.5, 5.6547, -0.32396],
+					"rotation": [-12.44548, -1.29256, -4.83045],
+					"cubes": [
+						{"origin": [0.50305, 5.69163, -1.82092], "size": [4, 0, 3], "uv": [0, 3]}
+					]
+				}
+			]
+		}
+	]
+}

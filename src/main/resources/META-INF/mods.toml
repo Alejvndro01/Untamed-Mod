@@ -1,0 +1,33 @@
+modLoader="javafml"
+loaderVersion="[47,)"
+license="All rights reserved"
+
+[[mods]]
+    modId="untamed"
+    version="1.0.0"
+    displayName="Untamed"
+    authors="Dilan"
+    description='''
+    Un mod enfocado en la fauna en general, implementando animales con comportamientos realistas de caza, huida y ambientación.
+    '''
+
+[[dependencies.untamed]]
+    modId="forge"
+    mandatory=true
+    versionRange="[47.4.18,)"
+    ordering="NONE"
+    side="BOTH"
+
+[[dependencies.untamed]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.20.1,1.21)"
+    ordering="NONE"
+    side="BOTH"
+
+[[dependencies.untamed]]
+    modId="geckolib"
+    mandatory=true
+    versionRange="[4.4.4,)"
+    ordering="AFTER"
+    side="BOTH"
