@@ -4,5 +4,7 @@
   "item.untamed.morpho_wing_scale": "Escama de Ala de Morpho",
   "item.untamed.butterfly_spawn_egg": "Generador de Mariposa Morpho",
   "item.untamed.logo_tab": "Logo de Untamed",
-  "creativetab.untamed_tab": "Untamed Mod"
+  "creativetab.untamed_tab": "Untamed Mod",
+  "item.untamed.tiger_shark_spawn_egg": "Generador de Tiburón Tigre",
+  "entity.untamed.tiger_shark": "Tiburón Tigre"
 }

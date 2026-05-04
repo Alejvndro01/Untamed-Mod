@@ -2,8 +2,10 @@ package com.alejvndro.untamed.event;
 
 import com.alejvndro.untamed.Untamed;
 import com.alejvndro.untamed.client.ButterflyRenderer;
+import com.alejvndro.untamed.client.TigerSharkRenderer;
 import com.alejvndro.untamed.entity.ButterflyEntity;
 import com.alejvndro.untamed.entity.ModEntities;
+import com.alejvndro.untamed.entity.TigerSharkEntity;
 import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.client.event.EntityRenderersEvent;
@@ -22,6 +24,8 @@ public class EntityEvents {
                 .add(Attributes.MOVEMENT_SPEED, 0.25D)
                 .add(Attributes.FLYING_SPEED, 0.4D)
                 .build());
+
+        event.put(ModEntities.TIGER_SHARK.get(), TigerSharkEntity.createAttributes().build());
     }
 
     @Mod.EventBusSubscriber(modid = Untamed.MOD_ID, bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
@@ -30,6 +34,7 @@ public class EntityEvents {
         public static void registerRenderers(EntityRenderersEvent.RegisterRenderers event) {
             // Vinculamos la entidad con el renderizador GeckoLib[cite: 2]
             event.registerEntityRenderer(ModEntities.BUTTERFLY.get(), ButterflyRenderer::new);
+            event.registerEntityRenderer(ModEntities.TIGER_SHARK.get(), TigerSharkRenderer::new);
         }
     }
 }
