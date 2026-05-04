@@ -131,6 +131,17 @@ public class TigerSharkEntity extends WaterAnimal implements GeoEntity {
         }
     }
 
+    /**
+     * Restrict the melee attack range so the shark only deals damage when its
+     * body (teeth) physically overlaps the target's hitbox — no more "at-a-distance" hits.
+     * Formula: (half-width of shark + half-width of target + small bite buffer)²
+     */
+    @Override
+    public double getMeleeAttackRangeSqr(LivingEntity target) {
+        float reach = (this.getBbWidth() + target.getBbWidth()) * 0.5F + 0.25F;
+        return reach * reach;
+    }
+
     @Override
     public boolean hurt(DamageSource source, float amount) {
         boolean result = super.hurt(source, amount);
