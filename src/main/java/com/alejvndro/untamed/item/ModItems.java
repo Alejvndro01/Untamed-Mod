@@ -56,6 +56,10 @@ public class ModItems {
         public static final RegistryObject<Item> BUTTERFLY_SPAWN_EGG = ITEMS.register("butterfly_spawn_egg", 
                 () -> new ForgeSpawnEggItem(ModEntities.BUTTERFLY, 0x00b7ff, 0x000000, new Item.Properties()));
 
+    // Huevo de Spawn del Tiburón Tigre (azul-gris oscuro y blanco)
+    public static final RegistryObject<Item> TIGER_SHARK_SPAWN_EGG = ITEMS.register("tiger_shark_spawn_egg",
+            () -> new ForgeSpawnEggItem(ModEntities.TIGER_SHARK, 0x5a6e82, 0xd8dce0, new Item.Properties()));
+
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
     }

@@ -17,6 +17,12 @@ public class ModEntities {
                     .sized(0.5f, 0.5f) // Tamaño del hitbox
                     .build("butterfly"));
 
+    public static final RegistryObject<EntityType<TigerSharkEntity>> TIGER_SHARK =
+            ENTITIES.register("tiger_shark", () -> EntityType.Builder
+                    .<TigerSharkEntity>of(TigerSharkEntity::new, MobCategory.WATER_CREATURE)
+                    .sized(2.0f, 1.0f) // Tamaño del hitbox del tiburón tigre
+                    .build("tiger_shark"));
+
     public static void register(IEventBus eventBus) {
         ENTITIES.register(eventBus);
     }
