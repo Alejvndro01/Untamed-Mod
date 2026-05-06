@@ -1,8 +1,9 @@
 package com.alejvndro.untamed;
 
-import com.alejvndro.untamed.entity.ModEntities;
 import com.alejvndro.untamed.item.ModCreativeModeTabs;
-import com.alejvndro.untamed.item.ModItems;
+import com.alejvndro.untamed.registry.Untamed_Blocks;
+import com.alejvndro.untamed.registry.Untamed_Entities;
+import com.alejvndro.untamed.registry.Untamed_Items;
 import com.mojang.logging.LogUtils;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -23,14 +24,17 @@ public class Untamed {
         ModCreativeModeTabs.register(modEventBus);
 
         // Registrar los ítems (incluye néctar, polen, escama y huevo)
-        ModItems.register(modEventBus);
+        Untamed_Items.register(modEventBus);
 
         // Registrar entidades
-        ModEntities.register(modEventBus);
+        Untamed_Entities.register(modEventBus);
+
+        // Registrar bloques
+        Untamed_Blocks.register(modEventBus);
 
         // Inicializar GeckoLib para las animaciones
         GeckoLib.initialize();
-        
+
         MinecraftForge.EVENT_BUS.register(this);
     }
 }

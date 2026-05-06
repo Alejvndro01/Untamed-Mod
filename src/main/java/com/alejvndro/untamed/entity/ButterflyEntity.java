@@ -1,6 +1,6 @@
 package com.alejvndro.untamed.entity;
 
-import com.alejvndro.untamed.item.ModItems;
+import com.alejvndro.untamed.registry.Untamed_Items;
 import net.minecraft.core.BlockPos;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.world.damagesource.DamageSource;
@@ -86,7 +86,7 @@ public class ButterflyEntity extends Animal implements GeoEntity {
         super.dropCustomDeathLoot(source, looting, recentlyHit);
         // Drop raro: 10% de probabilidad de soltar escamas[cite: 1]
         if (this.random.nextFloat() < 0.10f) {
-            this.spawnAtLocation(ModItems.MORPHO_WING_SCALE.get());
+            this.spawnAtLocation(Untamed_Items.MORPHO_WING_SCALE.get());
         }
     }
 
@@ -165,7 +165,7 @@ public class ButterflyEntity extends Animal implements GeoEntity {
 
                     if (timer >= 80) {
                         // Drop corregido: Monarch Pollen[cite: 1]
-                        butterfly.spawnAtLocation(ModItems.POLLEN.get());
+                        butterfly.spawnAtLocation(Untamed_Items.POLLEN.get());
                         butterfly.pollinateTicks = 0;
                         butterfly.flowerPos = null;
                         timer = 0;
