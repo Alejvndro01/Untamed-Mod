@@ -3,7 +3,7 @@ package com.alejvndro.untamed.event;
 import com.alejvndro.untamed.Untamed;
 import com.alejvndro.untamed.client.ButterflyRenderer;
 import com.alejvndro.untamed.entity.ButterflyEntity;
-import com.alejvndro.untamed.entity.ModEntities;
+import com.alejvndro.untamed.registry.Untamed_Entities;
 import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.client.event.EntityRenderersEvent;
@@ -17,7 +17,7 @@ public class EntityEvents {
     @SubscribeEvent
     public static void registerAttributes(EntityAttributeCreationEvent event) {
         // Asignamos vida y velocidad base
-        event.put(ModEntities.BUTTERFLY.get(), ButterflyEntity.createMobAttributes()
+        event.put(Untamed_Entities.BUTTERFLY.get(), ButterflyEntity.createMobAttributes()
                 .add(Attributes.MAX_HEALTH, 2.0D)
                 .add(Attributes.MOVEMENT_SPEED, 0.25D)
                 .add(Attributes.FLYING_SPEED, 0.4D)
@@ -29,7 +29,7 @@ public class EntityEvents {
         @SubscribeEvent
         public static void registerRenderers(EntityRenderersEvent.RegisterRenderers event) {
             // Vinculamos la entidad con el renderizador GeckoLib[cite: 2]
-            event.registerEntityRenderer(ModEntities.BUTTERFLY.get(), ButterflyRenderer::new);
+            event.registerEntityRenderer(Untamed_Entities.BUTTERFLY.get(), ButterflyRenderer::new);
         }
     }
 }

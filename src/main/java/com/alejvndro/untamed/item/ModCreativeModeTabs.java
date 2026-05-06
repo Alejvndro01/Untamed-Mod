@@ -1,6 +1,7 @@
 package com.alejvndro.untamed.item;
 
 import com.alejvndro.untamed.Untamed;
+import com.alejvndro.untamed.registry.Untamed_Items;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
@@ -15,13 +16,13 @@ public class ModCreativeModeTabs {
 
     public static final RegistryObject<CreativeModeTab> UNTAMED_TAB = CREATIVE_MODE_TABS.register("untamed_tab",
         () -> CreativeModeTab.builder()
-                .icon(() -> new ItemStack(ModItems.LOGO_TAB.get()))
+                .icon(() -> new ItemStack(Untamed_Items.LOGO_TAB.get()))
                 .title(Component.translatable("creativetab.untamed_tab"))
                 .displayItems((pParameters, pOutput) -> {
-                    pOutput.accept(ModItems.BUTTERFLY_NECTAR.get());
-                    pOutput.accept(ModItems.POLLEN.get());
-                    pOutput.accept(ModItems.MORPHO_WING_SCALE.get());
-                    pOutput.accept(ModItems.BUTTERFLY_SPAWN_EGG.get());
+                    pOutput.accept(Untamed_Items.BUTTERFLY_NECTAR.get());
+                    pOutput.accept(Untamed_Items.POLLEN.get());
+                    pOutput.accept(Untamed_Items.MORPHO_WING_SCALE.get());
+                    pOutput.accept(Untamed_Items.BUTTERFLY_SPAWN_EGG.get());
                 })
                 .build());
 
