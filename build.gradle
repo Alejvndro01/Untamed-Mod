@@ -3,7 +3,6 @@ plugins {
     id 'idea'
     id 'maven-publish'
     id 'net.minecraftforge.gradle' version '[6.0,6.2)'
-    // Añadimos el plugin de Mixin para que el entorno de VS Code los maneje bien
     id 'org.spongepowered.mixin' version '0.7.+'
 }
 
@@ -19,6 +18,7 @@ java.toolchain.languageVersion = JavaLanguageVersion.of(17)
 println "Java: ${System.getProperty 'java.version'}, JVM: ${System.getProperty 'java.vm.version'} (${System.getProperty 'java.vendor'}), Arch: ${System.getProperty 'os.arch'}"
 
 minecraft {
+    // Las mappings de oficiales son las mejores para el estilo Vanilla+
     mappings channel: mapping_channel, version: mapping_version
 
     copyIdeResources = true
@@ -29,7 +29,7 @@ minecraft {
             property 'forge.logging.markers', 'REGISTRIES'
             property 'forge.logging.console.level', 'debug'
 
-            // CRÍTICO: Esto soluciona el crash de GeckoLib en VS Code
+            // Configuración necesaria para Mixins en entorno de desarrollo
             property 'mixin.env.remapRefMap', 'true'
             property 'mixin.env.refMapRemappingFile', "${projectDir}/build/createSrgToMcp/output.srg"
 
@@ -51,37 +51,52 @@ minecraft {
 
         data {
             workingDirectory project.file('run-data')
+            // Lógica de Primal: Uso intensivo de Data Generators
             args '--mod', mod_id, '--all', '--output', file('src/generated/resources/'), '--existing', file('src/main/resources/')
         }
     }
 }
 
-// Configuración de Mixin
-//mixin {
-//    add sourceSets.main, "${mod_id}.refmap.json"
-//    config "${mod_id}.mixins.json"
-//}
+// Configuración de Mixin para Untamed
+mixin {
+    add project.sourceSets.main, "untamed.refmap.json"
+}
 
+// Incluir los recursos generados automáticamente por el Datagen
 sourceSets.main.resources { srcDir 'src/generated/resources' }
 
 repositories {
+    // Repositorio de Forge
+    maven { url = 'https://maven.minecraftforge.net/' }
+
+    // Repositorio de Geckolib
     maven { url 'https://dl.cloudsmith.io/public/geckolib3/geckolib/maven/' }
 }
 
 dependencies {
+    // Dependencia de Forge, usando la función de desofuscación para asegurar compatibilidad con el entorno de desarrollo
     minecraft "net.minecraftforge:forge:${minecraft_version}-${forge_version}"
 
-    // Usaremos la versión 4.4.4 que es la más estable para evitar errores de mapeo en 1.20.1
-    implementation fg.deobf("software.bernie.geckolib:geckolib-forge-1.20.1:4.4.4")
+    // Dependencia de Geckolib, usando la función de desofuscación para asegurar compatibilidad con el entorno de desarrollo
+    implementation fg.deobf('software.bernie.geckolib:geckolib-forge-1.20.1:4.4.4')
+        
+    // Si usas Mixins, asegúrate de que el procesador esté presente
+    annotationProcessor 'org.spongepowered:mixin:0.8.5:processor'
 }
 
 tasks.named('processResources', ProcessResources).configure {
     var replaceProperties = [
-            minecraft_version: minecraft_version, minecraft_version_range: minecraft_version_range,
-            forge_version: forge_version, forge_version_range: forge_version_range,
+            minecraft_version: minecraft_version, 
+            minecraft_version_range: minecraft_version_range,
+            forge_version: forge_version, 
+            forge_version_range: forge_version_range,
             loader_version_range: loader_version_range,
-            mod_id: mod_id, mod_name: mod_name, mod_license: mod_license, mod_version: mod_version,
-            mod_authors: mod_authors, mod_description: mod_description,
+            mod_id: mod_id, 
+            mod_name: mod_name, 
+            mod_license: mod_license, 
+            mod_version: mod_version,
+            mod_authors: mod_authors, 
+            mod_description: mod_description,
     ]
     inputs.properties replaceProperties
 
@@ -99,23 +114,11 @@ tasks.named('jar', Jar).configure {
                 'Implementation-Title'    : project.name,
                 'Implementation-Version'  : project.jar.archiveVersion,
                 'Implementation-Vendor'   : mod_authors,
-                'Implementation-Timestamp': new Date().format("yyyy-MM-dd'T'HH:mm:ssZ")
+                'Implementation-Timestamp': new Date().format("yyyy-MM-dd'T'HH:mm:ssZ"),
+                'MixinConfigs': 'untamed.mixins.json' // Registro de Mixins[cite: 2]
         ])
     }
     finalizedBy 'reobfJar'
-}
-
-publishing {
-    publications {
-        register('mavenJava', MavenPublication) {
-            artifact jar
-        }
-    }
-    repositories {
-        maven {
-            url "file://${project.projectDir}/mcmodsrepo"
-        }
-    }
 }
 
 tasks.withType(JavaCompile).configureEach {

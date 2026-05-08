@@ -8,7 +8,7 @@ license="All rights reserved"
     displayName="Untamed"
     authors="Dilan"
     description='''
-    Un mod enfocado en la fauna en general, implementando animales con comportamientos realistas de caza, huida y ambientación.
+    Un mod enfocado en la fauna en general, implementando animales con comportamientos realistas de caza, huida y ambientación. Basado en la lógica de programación Vanilla+.
     '''
 
 [[dependencies.untamed]]
@@ -23,11 +23,4 @@ license="All rights reserved"
     mandatory=true
     versionRange="[1.20.1,1.21)"
     ordering="NONE"
-    side="BOTH"
-
-[[dependencies.untamed]]
-    modId="geckolib"
-    mandatory=true
-    versionRange="[4.4.4,)"
-    ordering="AFTER"
     side="BOTH"

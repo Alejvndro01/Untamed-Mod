@@ -1,8 +1,6 @@
 {
-  "item.untamed.butterfly_nectar": "Néctar de Mariposa",
-  "item.untamed.pollen": "Polen",
-  "item.untamed.morpho_wing_scale": "Escama de Ala de Morpho",
-  "item.untamed.butterfly_spawn_egg": "Generador de Mariposa Morpho",
+  "item.untamed.tiger_shark_spawn_egg": "Huevo de Tiburón Tigre",
   "item.untamed.logo_tab": "Logo de Untamed",
-  "creativetab.untamed_tab": "Untamed Mod"
+  "creativetab.untamed_tab": "Naturaleza indómita sin límites",
+  "entity.untamed.tiger_shark": "Tiburón Tigre"
 }
